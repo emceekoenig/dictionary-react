@@ -13,11 +13,13 @@ export default function Meaning(props) {
             className="ms-2"
           >
             <p>
-              <small>{definition.definition}</small>
+              <small>
+                {definition.definition}
 
-              <br />
-
-              <em className="text-muted ms-3">{definition.example}</em>
+                <p>
+                  <em className="text-muted ms-3">{definition.example}</em>
+                </p>
+              </small>
             </p>
           </div>
         );
