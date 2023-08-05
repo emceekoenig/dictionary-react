@@ -1,0 +1,8 @@
+.Meaning {
+  text-transform: lowercase;
+}
+
+.Meaning p {
+  margin-top: 15px;
+  line-height: 10px;
+}

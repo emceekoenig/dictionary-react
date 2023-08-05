@@ -1,5 +1,4 @@
 .App-header {
-  background-color: white;
   font-family: "Playfair Display", serif;
   display: flex;
   flex-direction: column;
@@ -12,4 +11,8 @@
 
 .App-footer {
   text-align: center;
+}
+
+.App a {
+  text-decoration: none;
 }

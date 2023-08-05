@@ -14,7 +14,14 @@ export default function App() {
         </main>
 
         <footer className="App-footer mt-3">
-          <small>Coded by Chelsea Koenig</small>
+          <small>
+            Website coded by{" "}
+            <a href="https://chelsea-koenig.netlify.app/">Chelsea Koenig</a> and{" "}
+            <a href="https://github.com/emceekoenig/dictionary-react">
+              open-sourced
+            </a>
+            .
+          </small>
         </footer>
       </div>
     </div>
