@@ -3,31 +3,35 @@ import axios from "axios";
 import Results from "./Results";
 import "./Dictionary.css";
 
-export default function Dictionary() {
-  let [keyword, setKeyword] = useState("");
+export default function Dictionary(props) {
+  let [newWord, setNewWord] = useState(props.defaultKeyword);
   let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    setResults(response.data[0]);
+    setResults(response.data);
+    console.log(response.data);
   }
 
-  function search(event) {
-    event.preventDefault();
-
-    // documentation: https://dictionaryapi.dev/
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+  function search(keyword) {
+    let apiKey = "50f181fb5atco86d3e4e13e20785aa08";
+    let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${newWord}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
   }
 
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
+
   function handleKeywordChange(event) {
-    setKeyword(event.target.value);
+    setNewWord(event.target.value);
   }
 
   return (
     <div className="Dictionary">
       <section>
         <h4>What word do you want to look up?</h4>
-        <form onSubmit={search}>
+        <form onSubmit={handleSubmit}>
           <input
             type="search"
             onChange={handleKeywordChange}

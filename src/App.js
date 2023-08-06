@@ -16,8 +16,19 @@ export default function App() {
         <footer className="App-footer mt-3">
           <small>
             Website coded by{" "}
-            <a href="https://chelsea-koenig.netlify.app/">Chelsea Koenig</a> and{" "}
-            <a href="https://github.com/emceekoenig/dictionary-react">
+            <a
+              href="https://chelsea-koenig.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Chelsea Koenig
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://github.com/emceekoenig/dictionary-react"
+              target="_blank"
+              rel="noreferrer"
+            >
               open-sourced
             </a>
             .
