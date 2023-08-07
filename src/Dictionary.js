@@ -18,6 +18,7 @@ export default function Dictionary() {
     // documentation: https://dictionaryapi.com/products/json#sec-2.syns
     let apiKey = "ee2ed5f8-4097-4ffc-8010-10292a4ecce4";
     let apiUrl = `https://www.dictionaryapi.com/api/v3/references/collegiate/json/${keyword}?key=${apiKey}`;
+
     axios.get(apiUrl).then(handleResponse);
   }
 

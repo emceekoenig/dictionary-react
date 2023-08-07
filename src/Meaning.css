@@ -3,11 +3,12 @@
 }
 
 .Meaning .PartsOfSpeech {
-  font-size: 14px;
+  font-size: 16px;
   font-style: italic;
   margin-left: 5px;
+  margin-bottom: 5px;
 }
 
 .Meaning ul {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
