@@ -1,5 +1,6 @@
 import "./App.css";
 import Dictionary from "./Dictionary";
+import Footer from "./Footer";
 
 export default function App() {
   return (
@@ -13,26 +14,8 @@ export default function App() {
           <Dictionary />
         </main>
 
-        <footer className="App-footer mt-3">
-          <small>
-            Website coded by{" "}
-            <a
-              href="https://chelsea-koenig.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Chelsea Koenig
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://github.com/emceekoenig/dictionary-react"
-              target="_blank"
-              rel="noreferrer"
-            >
-              open-sourced
-            </a>
-            .
-          </small>
+        <footer className="mt-3">
+          <Footer />
         </footer>
       </div>
     </div>

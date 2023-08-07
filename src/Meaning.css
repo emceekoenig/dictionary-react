@@ -1,7 +1,13 @@
 .Meaning {
-  text-transform: lowercase;
+  text-transform: initial;
 }
 
-.Meaning p {
-  line-height: 1.5;
+.Meaning .PartsOfSpeech {
+  font-size: 14px;
+  font-style: italic;
+  margin-left: 5px;
+}
+
+.Meaning ul {
+  margin-bottom: 8px;
 }
